@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Snake Game</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="game-container">
+  <h1>Snake Game 🐍</h1>
+  <div class="score-board">
+    <span>Score: <span id="score">0</span></span>
+    <span>High Score: <span id="highScore">0</span></span>
+  </div>
+  <canvas id="gameCanvas"></canvas>
+  <div class="controls">
+    <button id="restartBtn">Restart</button>
+    <button id="pauseBtn">Pause</button>
+  </div>
+</div>
+
+<!-- Game Over Modal -->
+<div id="gameOverModal" class="modal">
+  <div class="modal-content">
+    <h2>Game Over!</h2>
+    <p>Score: <span id="finalScore">0</span></p>
+    <button id="retryBtn">Retry</button>
+  </div>
+</div>
+
+<script src="assets/javascript/script.js"></script>
+</body>
+</html>
